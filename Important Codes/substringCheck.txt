@@ -1,0 +1,10 @@
+// substring checking
+// search for the presence of "s1" in "s2"
+
+
+bool issubstring(string s1, string s2){
+    if(s2.find(s1) != string::npos){ // if s1 not there then the find operation return null position like v.end() in vectors
+        return true;
+    }
+    else return false;
+}
