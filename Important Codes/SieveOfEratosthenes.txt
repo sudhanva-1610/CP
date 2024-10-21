@@ -1,1 +1,29 @@
+1. All multiples of every number are marked saying they are not prime, the unmarked ones are pushed to the primeList
+2. This primeList can be directly accessed
+3. THE FIRST NUMBER IN IT IS 2 and then 3, 5, 7, 11, and so on but there are primes till 10^5 only, what about others?
 
+// vector<bool> primes;
+// vector<int> primeList;
+// void sievePrimes()
+// {
+//     int n = 100001;
+//     primes.assign(n, 1);
+//     primes[0] = primes[1] = 0;
+ 
+//     for (int i = 2; i * i < n; i++)
+//     {
+//         if (primes[i])
+//         {
+//             for (ll j = 1LL * i * i; j < 1LL * n; j += 1LL * i)
+//             {
+//                 primes[j] = 0;
+//             }
+//         }
+//     }
+ 
+//     for (int p = 2; p < n; p++) {
+//         if (primes[p]) {
+//             primeList.push_back(p);
+//         }
+//     }
+// }
